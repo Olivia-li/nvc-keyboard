@@ -14,6 +14,7 @@
 		C7BC941829CFA48800DDBF79 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BC941729CFA48800DDBF79 /* KeyboardViewController.swift */; };
 		C7BC941C29CFA48800DDBF79 /* Non-violent Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C7BC941529CFA48800DDBF79 /* Non-violent Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C7BC942329CFA57500DDBF79 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7BC942229CFA57500DDBF79 /* KeyboardKit */; };
+		C7F447E529CFA75000B41A59 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7F447E429CFA75000B41A59 /* KeyboardKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F447E529CFA75000B41A59 /* KeyboardKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +78,7 @@
 				C7BC940229CFA46000DDBF79 /* nvc-keyboard */,
 				C7BC941629CFA48800DDBF79 /* Non-violent Keyboard */,
 				C7BC940129CFA46000DDBF79 /* Products */,
+				C7F447E329CFA75000B41A59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +119,13 @@
 			path = "Non-violent Keyboard";
 			sourceTree = "<group>";
 		};
+		C7F447E329CFA75000B41A59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +164,9 @@
 			dependencies = (
 			);
 			name = "Non-violent Keyboard";
+			packageProductDependencies = (
+				C7F447E429CFA75000B41A59 /* KeyboardKit */,
+			);
 			productName = "Non-violent Keyboard";
 			productReference = C7BC941529CFA48800DDBF79 /* Non-violent Keyboard.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -515,6 +528,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		C7BC942229CFA57500DDBF79 /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7BC942129CFA57500DDBF79 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+		C7F447E429CFA75000B41A59 /* KeyboardKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C7BC942129CFA57500DDBF79 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
 			productName = KeyboardKit;
