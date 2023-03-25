@@ -11,7 +11,34 @@
 		C7BC940629CFA46000DDBF79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BC940529CFA46000DDBF79 /* ContentView.swift */; };
 		C7BC940829CFA46100DDBF79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7BC940729CFA46100DDBF79 /* Assets.xcassets */; };
 		C7BC940B29CFA46100DDBF79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7BC940A29CFA46100DDBF79 /* Preview Assets.xcassets */; };
+		C7BC941829CFA48800DDBF79 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BC941729CFA48800DDBF79 /* KeyboardViewController.swift */; };
+		C7BC941C29CFA48800DDBF79 /* Non-violent Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C7BC941529CFA48800DDBF79 /* Non-violent Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C7BC942329CFA57500DDBF79 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = C7BC942229CFA57500DDBF79 /* KeyboardKit */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7BC941A29CFA48800DDBF79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7BC93F829CFA46000DDBF79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7BC941429CFA48800DDBF79;
+			remoteInfo = "Non-violent Keyboard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C7BC942029CFA48800DDBF79 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C7BC941C29CFA48800DDBF79 /* Non-violent Keyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C7BC940029CFA46000DDBF79 /* nvc-keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nvc-keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +46,21 @@
 		C7BC940529CFA46000DDBF79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C7BC940729CFA46100DDBF79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7BC940A29CFA46100DDBF79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C7BC941529CFA48800DDBF79 /* Non-violent Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Non-violent Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7BC941729CFA48800DDBF79 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		C7BC941929CFA48800DDBF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C7BC93FD29CFA46000DDBF79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7BC942329CFA57500DDBF79 /* KeyboardKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7BC941229CFA48800DDBF79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				C7BC940229CFA46000DDBF79 /* nvc-keyboard */,
+				C7BC941629CFA48800DDBF79 /* Non-violent Keyboard */,
 				C7BC940129CFA46000DDBF79 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				C7BC940029CFA46000DDBF79 /* nvc-keyboard.app */,
+				C7BC941529CFA48800DDBF79 /* Non-violent Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +107,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C7BC941629CFA48800DDBF79 /* Non-violent Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C7BC941729CFA48800DDBF79 /* KeyboardViewController.swift */,
+				C7BC941929CFA48800DDBF79 /* Info.plist */,
+			);
+			path = "Non-violent Keyboard";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +126,37 @@
 				C7BC93FC29CFA46000DDBF79 /* Sources */,
 				C7BC93FD29CFA46000DDBF79 /* Frameworks */,
 				C7BC93FE29CFA46000DDBF79 /* Resources */,
+				C7BC942029CFA48800DDBF79 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7BC941B29CFA48800DDBF79 /* PBXTargetDependency */,
+			);
+			name = "nvc-keyboard";
+			packageProductDependencies = (
+				C7BC942229CFA57500DDBF79 /* KeyboardKit */,
+			);
+			productName = "nvc-keyboard";
+			productReference = C7BC940029CFA46000DDBF79 /* nvc-keyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7BC941429CFA48800DDBF79 /* Non-violent Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7BC941D29CFA48800DDBF79 /* Build configuration list for PBXNativeTarget "Non-violent Keyboard" */;
+			buildPhases = (
+				C7BC941129CFA48800DDBF79 /* Sources */,
+				C7BC941229CFA48800DDBF79 /* Frameworks */,
+				C7BC941329CFA48800DDBF79 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "nvc-keyboard";
-			productName = "nvc-keyboard";
-			productReference = C7BC940029CFA46000DDBF79 /* nvc-keyboard.app */;
-			productType = "com.apple.product-type.application";
+			name = "Non-violent Keyboard";
+			productName = "Non-violent Keyboard";
+			productReference = C7BC941529CFA48800DDBF79 /* Non-violent Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +171,9 @@
 					C7BC93FF29CFA46000DDBF79 = {
 						CreatedOnToolsVersion = 14.1;
 					};
+					C7BC941429CFA48800DDBF79 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 				};
 			};
 			buildConfigurationList = C7BC93FB29CFA46000DDBF79 /* Build configuration list for PBXProject "nvc-keyboard" */;
@@ -111,11 +185,15 @@
 				Base,
 			);
 			mainGroup = C7BC93F729CFA46000DDBF79;
+			packageReferences = (
+				C7BC942129CFA57500DDBF79 /* XCRemoteSwiftPackageReference "KeyboardKit" */,
+			);
 			productRefGroup = C7BC940129CFA46000DDBF79 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C7BC93FF29CFA46000DDBF79 /* nvc-keyboard */,
+				C7BC941429CFA48800DDBF79 /* Non-violent Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +205,13 @@
 			files = (
 				C7BC940B29CFA46100DDBF79 /* Preview Assets.xcassets in Resources */,
 				C7BC940829CFA46100DDBF79 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7BC941329CFA48800DDBF79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +227,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7BC941129CFA48800DDBF79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7BC941829CFA48800DDBF79 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7BC941B29CFA48800DDBF79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7BC941429CFA48800DDBF79 /* Non-violent Keyboard */;
+			targetProxy = C7BC941A29CFA48800DDBF79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C7BC940C29CFA46100DDBF79 /* Debug */ = {
@@ -262,6 +363,7 @@
 		C7BC940F29CFA46100DDBF79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +393,7 @@
 		C7BC941029CFA46100DDBF79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +414,56 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oliviali.nvc-keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C7BC941E29CFA48800DDBF79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RSR8K28Z58;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Non-violent Keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Non-violent Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oliviali.nvc-keyboard.keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C7BC941F29CFA48800DDBF79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RSR8K28Z58;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Non-violent Keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Non-violent Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oliviali.nvc-keyboard.keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,7 +491,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		C7BC941D29CFA48800DDBF79 /* Build configuration list for PBXNativeTarget "Non-violent Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7BC941E29CFA48800DDBF79 /* Debug */,
+				C7BC941F29CFA48800DDBF79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C7BC942129CFA57500DDBF79 /* XCRemoteSwiftPackageReference "KeyboardKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KeyboardKit/KeyboardKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C7BC942229CFA57500DDBF79 /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7BC942129CFA57500DDBF79 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7BC93F829CFA46000DDBF79 /* Project object */;
 }
