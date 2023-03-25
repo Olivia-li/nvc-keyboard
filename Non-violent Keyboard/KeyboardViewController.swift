@@ -8,4 +8,14 @@
 import UIKit
 import KeyboardKit
 
-class KeyboardViewController: KeyboardInputViewController {}
+class KeyboardViewController: KeyboardInputViewController {
+    override func viewWillSetupKeyboard() {
+           super.viewWillSetupKeyboard()
+           setup { controller in
+               SystemKeyboard(
+                   controller: controller,
+                   autocompleteToolbar: .none
+               )
+           }
+       }
+}
